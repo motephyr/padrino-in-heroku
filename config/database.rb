@@ -1,13 +1,14 @@
 ##
 # You can use other adapters like:
 #
+postgres = URI.parse(ENV['DATABASE_URL'] || '')
 ActiveRecord::Base.configurations[:production] = {
   :adapter  => 'postgresql',
   :encoding => 'utf8',
-  :database => 'ddbkjmhqoue8oo', 
-  :username => 'uwyzicvdjwdumy',
-  :password => 'CZWkeRYU2UqFyFx3t2crLgNYXq',
-  :host     => 'ec2-54-227-252-82.compute-1.amazonaws.com'
+  :database => 'd9jis83ss68r57', 
+  :username => 'ixrkjahmbzfaxt',
+  :password => 'q73i_I31SajQrlHmK5RfhYr_GX',
+  :host     => 'ec2-23-21-130-168.compute-1.amazonaws.com'
 }
 
 ActiveRecord::Base.configurations[:development] = {
